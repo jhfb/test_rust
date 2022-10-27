@@ -1,4 +1,9 @@
 pub mod hello;
+pub use hello::say_hello;
+
+pub fn hello_world(){
+    say_hello::hello_world();
+}
 
 #[cfg(test)]
 mod tests {
@@ -8,6 +13,5 @@ mod tests {
     fn it_works() {
         let result = 2 + 2;
         assert_eq!(result, 4);
-        hello::hello_world::hello_world();
     }
 }
