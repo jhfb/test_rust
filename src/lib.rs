@@ -1,9 +1,9 @@
-pub mod hello;
-pub use hello::say_hello;
+mod hello;
 
-pub fn hello_world(){
-    say_hello::hello_world();
+pub fn hello_world_v(){
+    hello::say_hello::hello_world();
 }
+
 
 #[cfg(test)]
 mod tests {
